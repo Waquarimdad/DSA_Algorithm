@@ -13,24 +13,32 @@ public class TheoryRelatedToClassAndObjet {
 
         // whenever we create an (instance or object) of the class, the jvm will allocate memory at (runtime)..
         // class is an (theoretical constructor).. and object is the (physical) thing that takes space in the heap memory...
-        Student waquar = new Student(1, 100.2f, "Waquar Imdad");
-        System.out.println(waquar.getName() + " " + waquar.getMarks() + " " + waquar.getRollNumbers());
 
-        Student kunal = new Student();
-        kunal.setName("Kunal");
-        kunal.setMarks(123.3f);
-        kunal.setRollNumbers(2);
-        System.out.println(kunal.getName() + " " + kunal.getMarks() + " " + kunal.getRollNumbers());
-
-        Student student;
+        Student student; // declaring the object
         // declaring it heere, now it is just in the stack memory not pointing to any object, just try to print and check, we r not able to print
         // because it's not yet initialized, so in order to print this we need to first initialized the object..
-        student = new Student();
-        System.out.println(student);
+        student = new Student(); // initialize the object, new Student() is called constructor
+        // by using the dot operator we can call the instance variable of the object or set the values.
+        student.name = "Waquar Imdad";
+        student.marks = 99.99f;
+        student.rollNumbers = 1;
+
+        System.out.println(student.name);
+        System.out.println(student.rollNumbers);
+        System.out.println(student.marks);
 
         Student[] arrayOfStudent = new Student[5];
-        System.out.println(Arrays.toString(arrayOfStudent));
         // but for the object it's null.. because it's not initialized..
+        System.out.println(Arrays.toString(arrayOfStudent));
+        // this is successful with the help of the constructor that we r creating in the class
+        Student newStudent = new Student(
+               1,
+               99.99f,
+               "Salman Khan"
+        );
+        System.out.println(student.name);
+        System.out.println(student.rollNumbers);
+        System.out.println(student.marks);
     }
 
     /*
@@ -45,49 +53,27 @@ public class TheoryRelatedToClassAndObjet {
      Dynamic Memory Allocation: -> Lef hand side (Student student) = Right hand side (new Student()); whatever in the left hand side of the equal to is happened at compile time
      and the right hand side of the equal to is happened at the runtime.
      */
+}
+// Student student = new Student(); here (Student) is the data type and (student) is the reference variable...
+// Example: ArrayList<Integer> arrayList = new ArrayList<>(); Just like above here (Integer) is the data type..
+class Student {
+    // this are called the class data type... and class is used to define this data type..
+    // inner class need to be static..
+    int rollNumbers; // primitive data type
+    float marks; // primitive data type
+    String name;
 
-    // Inner class: Student student = new Student(); here (Student) is the data type and (student) is the reference variable...
-    // Example: ArrayList<Integer> arrayList = new ArrayList<>(); Just like above here (Integer) is the data type..
-    static class Student {
-        // this are called the class data type... and class is used to define this data type..
-        // inner class need to be static..
-        int rollNumbers;
-        float marks;
-        String name;
+    /*
+    Constructor is defined what happens when object is created. Constructor is the special type of function in the class.
+    It runs when we create an object and it allocates some variables.
+     */
+    Student(int rollNumbers, float marks, String name) {
+        this.rollNumbers = rollNumbers;
+        this.marks = marks;
+        this.name = name;
+    }
+    // this is called by default constructor, created by jvm for us..
+    Student() {
 
-        // Parameterized constructor..
-        Student(int rollNumbers, float marks, String name) {
-            this.rollNumbers = rollNumbers;
-            this.marks = marks;
-            this.name = name;
-        }
-        // Non Parameterized constructor
-        Student() {
-
-        }
-
-        public int getRollNumbers() {
-            return rollNumbers;
-        }
-
-        public float getMarks() {
-            return marks;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setRollNumbers(int rollNumbers) {
-            this.rollNumbers = rollNumbers;
-        }
-
-        public void setMarks(float marks) {
-            this.marks = marks;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
     }
 }
