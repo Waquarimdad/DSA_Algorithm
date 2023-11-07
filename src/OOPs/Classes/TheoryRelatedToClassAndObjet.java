@@ -41,6 +41,9 @@ public class TheoryRelatedToClassAndObjet {
     1. State --> it's value from the data type
     Note: Instance Variable:-> Variable inside an object is known as instance variable or variable declare inside the class..
      (VVImportant) (When we create an object, memory is dynamically allocated at run time...) and return reference to it..
+
+     Dynamic Memory Allocation: -> Lef hand side (Student student) = Right hand side (new Student()); whatever in the left hand side of the equal to is happened at compile time
+     and the right hand side of the equal to is happened at the runtime.
      */
 
     // Inner class: Student student = new Student(); here (Student) is the data type and (student) is the reference variable...
