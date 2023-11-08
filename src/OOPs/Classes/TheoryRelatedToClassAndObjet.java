@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class TheoryRelatedToClassAndObjet {
     public static void main(String[] args) {
-//        // store 5 roll numbers
+        // store 5 roll numbers
 //        int[] rollNumbers = new int[5];
 //        // store 5 names of a students
 //        String[] names = new String[5];
