@@ -1,4 +1,4 @@
-package OOPs.Classes;
+package OOPs.Classes.ClassAndObject;
 
 import java.util.Arrays;
 
