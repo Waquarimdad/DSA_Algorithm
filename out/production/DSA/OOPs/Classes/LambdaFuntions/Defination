@@ -1,0 +1,69 @@
+Lambda function is called in line function.
+Lambda function does not requires name of the function.
+Need to understand the comparator.
+
+Lambda expressions are often used with (functional interfaces). For example, the java.util.function package in Java 8 provides a
+variety of functional interfaces that can be used with lambda expressions, such as Consumer, Predicate, and Function.
+
+Here's an example using the Consumer functional interface:
+import java.util.Arrays;
+import java.util.List;
+
+public class LambdaExample {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+
+        // Using a lambda expression with the Consumer interface
+        names.forEach(name -> System.out.println("Hello, " + name));
+    }
+}
+In this example, the forEach method is used to iterate over a list of names, and a lambda expression is used as the argument to the Consumer
+functional interface to specify the action to be performed for each element in the list.
+
+Lambda expressions provide a more concise and expressive way to represent anonymous methods, especially in the context of functional programming
+and the use of functional interfaces.
+
+How consumer works in the above example:
+
+Certainly! In this example, we are using the `Consumer` functional interface along with a lambda expression to iterate over a list of names and perform a specific action for each element in the list. Let's break down the code step by step:
+
+1. **List Initialization:**
+   ```java
+   List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+   ```
+   Here, we create a `List` of `String` objects named `names` using the `Arrays.asList` method. The list contains three names: "Alice", "Bob", and "Charlie."
+
+2. **Lambda Expression with Consumer:**
+   ```java
+   names.forEach(name -> System.out.println("Hello, " + name));
+   ```
+   The `forEach` method is used to iterate over each element in the list. The parameter to `forEach` is a lambda expression that represents the action to be performed on each element.
+
+   - `name -> System.out.println("Hello, " + name)` is a lambda expression.
+   - `name` is the parameter of the lambda expression, representing each element in the list during iteration.
+   - `System.out.println("Hello, " + name)` is the body of the lambda expression, specifying what action to perform for each element.
+
+3. **Consumer Functional Interface:**
+   The lambda expression `name -> System.out.println("Hello, " + name)` corresponds to the `Consumer` functional interface.
+   The `Consumer` interface is part of the `java.util.function` package and has a single abstract method called `accept`.
+   The `accept` method takes a single argument and performs an action.
+
+   In this case, the lambda expression is compatible with the `accept` method of the `Consumer` interface, where `name` is the argument passed to
+   the `accept` method.
+
+4. **forEach Execution:**
+   The `forEach` method internally iterates over each element in the list (`names`) and applies the specified action (the lambda expression) to each element.
+
+   - For the first iteration, it executes `System.out.println("Hello, " + "Alice")`.
+   - For the second iteration, it executes `System.out.println("Hello, " + "Bob")`.
+   - For the third iteration, it executes `System.out.println("Hello, " + "Charlie")`.
+
+5. **Output:**
+   The result of running this code is the printing of a greeting for each name:
+   ```
+   Hello, Alice
+   Hello, Bob
+   Hello, Charlie
+   ```
+
+In summary, the `Consumer` functional interface, along with the `forEach` method, allows you to apply a specific action (defined by a lambda expression) to each element in a collection, in this case, a list of names. The lambda expression provides a concise way to express the behavior without the need for explicit iteration and indexing.

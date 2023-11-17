@@ -1,0 +1,55 @@
+LinkedList (Very very very important topics):
+
+As we know array is an contiguous memory allocation.
+
+1. Singly linked list: Something like one sided love.
+        We have head and tail in the linked list.
+        Head is the reference variable pointing to the very first node.
+        Tail is pointing to the last node of the linked list.
+
+ Structure of the linked list:
+
+ class Node {
+    int value;
+    Node next;
+ }
+ The problem here is we can't directly access the index of the element in the linked list.
+ In order to display the Linked list we can take temp variable and increment it. Because temp is not the part of the linked list structure.
+
+ If linked list is empty then the head and the tail is null, in that case if we are inserting the first element in the node then the head
+ will be the first element in the linked list and tail also be the first element in the linked list.
+
+ If we are not maintaining the tail and someone ask insert in the last then what we will do?
+ the time complexity then will be O(n)
+ Question: What's the benefit of taking extra variable?
+ Answer: By using the tail we are able to insert the element at last position with constant time complexity.
+
+ My code for deleting an element in the linked list:
+   public void deleteAtFirstIndex() {
+         Node tempNode = head;
+         head = tempNode.next;
+         if (head == null) {
+             tail = null;
+         }
+         size--;
+     }
+
+     public void delete(int index) {
+         if (index == 0) {
+             deleteAtFirstIndex();
+             return;
+         }
+         Node tempNode = head;
+         Node deleteNode;
+         for (int i = 1; i < index ; i++) {
+             tempNode = tempNode.next;
+         }
+         deleteNode = tempNode.next;
+         tempNode.next = deleteNode.next;
+         size--;
+     }
+
+While deleting the last element in the linked list?
+If I am able to reach the second last item i can able to make this as a tail. I can Point the tail to the null.
+Time complexity: O(n) because I am traversing.
+

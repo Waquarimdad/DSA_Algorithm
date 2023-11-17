@@ -1,0 +1,24 @@
+                                                                   Access Modifier
+1. Public:
+2. Private : We are not able to access the members outside the class even in same package.
+3. Protected : Protected is used when we talking about inheritance.
+4. Default : We are not able to access outside the package but we are able access outside the class.
+
+Note: Subclass meaning (inheritance).
+
+class Parent {
+
+}
+clas Child extends Parent{
+    // This is called subclass.
+}
+
+Q. When to use which access modifier.
+
+Private: It is used when we want to hide sensitive information... Example:  Encapsulation
+No modifier is also called Default modifier: Don't want to be used outside the particular package.
+
+Important Point Related to Protected Modifier:
+
+-> Only the subclass can access the protected members in the base class/parent class when it is in different package.
+   Even parent class not able toa access the protected members of it's own class from different package.

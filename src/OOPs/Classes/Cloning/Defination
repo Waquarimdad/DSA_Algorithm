@@ -1,0 +1,7 @@
+Object cloning: Exact copy of the object.
+
+We can use an interface known as Cloneable in order to clone an object. It also throws an exception called CloneNotSupportedException.
+
+Shallow and deep cloning:
+Shallow cloning: For primitive it is crating a new variable and copying it. But for objects it's just pointing it to the same object.
+Deep cloning: Create an copy of same object.

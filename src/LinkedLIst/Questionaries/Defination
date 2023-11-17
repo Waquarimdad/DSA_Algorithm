@@ -1,0 +1,7 @@
+Most important video:
+
+Topic linked list is asked extensively in all the interviews.
+Other important topic is BFS and DFS.
+While doing recursion in liked list we need to have two things:
+1.Void return type and make changes in the linked list.
+2. Node return type that returns list nodes to change the structure.

@@ -1,0 +1,10 @@
+Enums are group of variables.
+
+Some important points:
+
+These are enum constants.
+1. Every single enum here is public, static and final.
+2. Since it is final we can't create child enum. Because if we declare class as a enum we can't inherit.
+3. Here type is Week.
+
+Enum can implement as much interface as it can.

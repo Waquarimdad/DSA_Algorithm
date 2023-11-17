@@ -1,0 +1,8 @@
+In Built Packages
+
+1. Lang Package: It contains essential stuff of Java. Java language specific stuff. Automatically imported by Java.
+2. I/O Package: Example: Buffer reader and Buffer writer.
+3. Util Package: Example: Array List etc. Data structure, Collection Framework
+4. Applet
+5. awt package
+6. net package

@@ -1,0 +1,23 @@
+Notes:
+1. Interface basically contains abstract methods/functions.
+2. Variables are static and final by default in the interface.
+3. Interface mostly specifies what class is doing not how it doing it.
+
+Q. Why variables in the interface are final in nature?
+Variables in the interface are static and final by default because we don't have a constructor in the interface so in order to initialized it we need a
+constructor but for final variables we need to initialize it when we declaring.
+
+Implementations:
+Abstract class can provide implementations of the interface but interface can't provide implementations for the abstract class.
+
+We can implement multiple interfaces together.
+
+About the accessibility:
+Members of the interface are public by default.
+
+Class can implements number of the interfaces, but only extend a single abstract class or super class.
+
+Two classes un related to each other can also implement same interfaces.
+
+Important:
+We need to create a separate class for each interface;

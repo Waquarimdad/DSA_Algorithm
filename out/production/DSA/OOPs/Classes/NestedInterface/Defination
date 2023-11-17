@@ -1,0 +1,1 @@
+Nested interface can be declared as public, private or protected. But top level interface can be declared as public or default.

@@ -1,0 +1,22 @@
+Parent class is only going to give the generalized from of the method not the method body. It's only give the name of the method.
+
+Syntax:
+
+abstract void career(String name);
+Child class must override the parent method in order to use it.
+Any class that contains one or more than one abstract method must also be declared as abstract class.
+
+use case:
+if we definitely know methods in the parent class needs to be overridden then make those abstract methods.
+
+Important Notes:
+1. We can't create an object of an abstract class but in order to create an object we need to implement the abstract method. If we create an object of
+the abstract class then if we call the abstract method then it throws an exception that it doesn't have method body.
+2. Abstract construct is not allowed.
+3. Static method can't be override.
+4. we can create normal methods in abstract class just like abstract methods and we also override in the sub classes.
+
+We are able to create normal constructor but we are not able to create abstract constructor.
+We are also not able to create (abstract static  method) as well.
+
+Note: Hence we are not able to create abstract object but we can use it as a reference variable.

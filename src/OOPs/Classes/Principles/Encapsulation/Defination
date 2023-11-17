@@ -1,0 +1,7 @@
+Wrapping of implementation of data members and methods inside the class is known as encapsulation.
+It basically hides the code and the data into a single entity or a unit that is protected by the outside world.
+
+
+Difference between encapsulation and abstraction.
+
+1.Abstraction is solving the design level issues. While encapsulation is solving the implementation level issues.

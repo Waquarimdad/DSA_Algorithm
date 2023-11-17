@@ -1,0 +1,9 @@
+Polymorphism: Polymorphism is a combination of the following greek words (poly) and (morphisms). Poly means (many) and morphism means (ways to represent).
+So polymorphism means doing one thing in many different ways. Polymorphism occurs during inheritance
+Act of representing same thing in many different ways.
+
+Question:
+        How JVM knows which methods to call internally. As we know now it will call child class methods..
+Answer:
+        JVM knows by concept called Dynamic Method Dispatch (VVImportant).
+        Dynamic Method Dispatch: It's a mechanism by which a call to an overridden method is resolved at runtime rather than at compile time.

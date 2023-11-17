@@ -1,0 +1,4 @@
+Interface to interface we are using extend keyword.
+Static interface method should always have body.
+
+Access modifier for the overridden method should be same or better.

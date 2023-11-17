@@ -1,0 +1,9 @@
+Vector is just like ArrayList.
+
+Important point to note:
+Vector is synchronized. What it means is that Only one thread can access it at a time.
+In ArrayList multiple threads can access the same object. ArrayList is not synchronized. It is asynchronized.
+
+Vector is slower than arrayList because it is waiting for the thread to complete it execution before assigning it to some other thread that is
+waiting for it turn. In other hand Array list is accessed by multiple threads at the same time so it is faster than Vector.
+

@@ -1,0 +1,25 @@
+Error is non recoverable. We can't recover from an error and programme can't handle it.
+
+                                                                       (Hierarchy)
+
+                                                                        Object (it's an super class)
+                                                                           |
+                                                                           |
+                                                                        Throwable (Inherit the super object class)
+                                                                            |
+                                                                            |
+                                1. Errors                                                                               2. Exceptions
+                                                                                                                             |
+                                                                                                                             |
+                                                                                                                         1. Checked
+                                                                                                                         2. Un checked
+
+1. Checked: They are checked during compile time. Example: File not found Exception
+2. Un-checked: They are checked during runtime. Example: NPE, I/O Exception, ArithmeticException: / by zero
+
+We have five keywords:
+1. try
+2. catch
+3. finally
+4. throw: while we are throwing an exception
+5. throws: used to declare an exception

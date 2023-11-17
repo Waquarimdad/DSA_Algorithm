@@ -1,0 +1,16 @@
+Internal working of ArrayList:
+
+1. Initially the size of the arrayList is 10 or we say that it as a DEFAULT_SIZE.
+2. Whenever the size of the arrayList is full, it double the size of the array internally.
+3. After doubling the size of the arrayList, it will internally copy the previous data into the ArrayList and insert the new data into the
+arrayList.
+
+The Custom array list that we have created just takes integer data type but arrayList will takes all other data type as well. So we need to
+fix this.
+We can fix this by using generic arrayList.
+
+ArrayList<Integer> list = new ArrayList<Integer>; Heer Integer functionality is provided by the generic.
+If we pass any thing other than what we declared it's throws an exception.
+Generic helps in providing type to the data structure.
+Generic also provides type safety.
+We cannot create instance of type parameter.
